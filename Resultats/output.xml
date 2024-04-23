@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.9 on win32)" generated="2024-04-13T19:38:41.092552" rpa="false" schemaversion="5">
+<suite id="s1" name="StringLib" source="C:\Users\PC\PycharmProjects\RobotFrameworkProject\Test\String\StringLib.robot">
+<test id="s1-t1" name="convertir en minuscule" line="9">
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-04-13T19:38:41.170691" level="INFO">${str1} = abc</msg>
+<var>${str1}</var>
+<arg>ABC</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2024-04-13T19:38:41.170691" level="INFO">${str2} = 1a2c3d</msg>
+<var>${str2}</var>
+<arg>1A2c3D</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Lower Case" owner="String">
+<arg>${str1}</arg>
+<doc>Fails if the given ``string`` is not in lower case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Lower Case" owner="String">
+<arg>${str2}</arg>
+<doc>Fails if the given ``string`` is not in lower case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${str1}</arg>
+<arg>abc</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${str2}</arg>
+<arg>1a2c3d</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.000000"/>
+</test>
+<test id="s1-t2" name="convertir en Majuscule" line="18">
+<kw name="Convert To Upper Case" owner="String">
+<msg time="2024-04-13T19:38:41.186295" level="INFO">${str1} = ABC</msg>
+<var>${str1}</var>
+<arg>abc</arg>
+<doc>Converts string to upper case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To Upper Case" owner="String">
+<msg time="2024-04-13T19:38:41.186295" level="INFO">${str2} = 1A2C3D</msg>
+<var>${str2}</var>
+<arg>1a2c3d</arg>
+<doc>Converts string to upper case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Upper Case" owner="String">
+<arg>${str1}</arg>
+<doc>Fails if the given ``string`` is not in upper case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Upper Case" owner="String">
+<arg>${str2}</arg>
+<doc>Fails if the given ``string`` is not in upper case.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${str1}</arg>
+<arg>ABC</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${str2}</arg>
+<arg>1A2C3D</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:38:41.170691" elapsed="0.015604"/>
+</test>
+<test id="s1-t3" name="generation d'une chaine random" line="29">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-04-13T19:38:41.186295" level="INFO">${low} = rdupoiamnaag</msg>
+<var>${low}</var>
+<arg>12</arg>
+<arg>[LOWER]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-13T19:38:41.201921" level="INFO">rdupoiamnaag</msg>
+<arg>${low}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.201921" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:38:41.186295" elapsed="0.015626"/>
+</test>
+<test id="s1-t4" name="supprimer une chaine" line="34">
+<kw name="Remove String" owner="String">
+<msg time="2024-04-13T19:38:41.201921" level="INFO">${str} = Robot Frame</msg>
+<var>${str}</var>
+<arg>Robot Framework</arg>
+<arg>work</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.201921" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-13T19:38:41.201921" level="INFO">Robot Frame</msg>
+<arg>${str}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.201921" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:38:41.201921" elapsed="0.000000"/>
+</test>
+<test id="s1-t5" name="Remplacer une chaine" line="38">
+<kw name="Replace String" owner="String">
+<msg time="2024-04-13T19:38:41.201921" level="INFO">${str} = Hello, tellus!</msg>
+<var>${str}</var>
+<arg>Hello, world!</arg>
+<arg>world</arg>
+<arg>tellus</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.201921" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-13T19:38:41.201921" level="INFO">Hello, tellus!</msg>
+<arg>${str}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-13T19:38:41.201921" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-13T19:38:41.201921" elapsed="0.000000"/>
+</test>
+<doc>String library standard</doc>
+<status status="PASS" start="2024-04-13T19:38:41.092552" elapsed="0.109369"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="StringLib">StringLib</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
